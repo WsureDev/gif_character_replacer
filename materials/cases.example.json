@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "white-background-example",
+      "gif": "gifs/example.gif",
+      "references": ["references/character.png"],
+      "subject": "要替换的主体，例如：画面中央的白猫",
+      "characterNotes": "参考角色的关键特征，例如：蓝色短发、红色围巾",
+      "backgroundPolicy": "preserve-opaque"
+    }
+  ]
+}

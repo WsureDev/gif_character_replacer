@@ -1,0 +1,33 @@
+{
+  "name": "gif-character-replacer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "description": "GIF frame, sheet and timing tools for reference-character image editing",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "cli": "node --import tsx src/cli.ts",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.web.json --noEmit",
+    "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.web.json",
+    "web": "npm run build && node dist/web-server.js",
+    "test": "node --import tsx --test --test-reporter=spec test/*.test.ts"
+  },
+  "dependencies": {
+    "dotenv": "18.0.8",
+    "gifenc": "1.0.3",
+    "gifuct-js": "2.1.2",
+    "openai": "6.25.0",
+    "sharp": "0.35.5",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.0",
+    "@types/omggif": "1.0.5",
+    "omggif": "1.0.10",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,43 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+dist-web/
+coverage/
+*.log
+
+# User materials stay local.
+materials/gifs/*
+!materials/gifs/.gitkeep
+materials/references/*
+!materials/references/.gitkeep
+materials/cases.json
+
+# Retained experiments belong outside the repository, under the user's data directory.
+# Do not put generated frames, sheets, or API responses in this repository.
+
+# Local-only development notes and private experiment history.
+docs/research.md
+docs/experiment-plan.md
+docs/stage1-results.md
+docs/stage2-results.md
+docs/density25-results.md
+docs/full67-results.md
+docs/local/
+
+# Generated data and diagnostic exports.
+/data/
+/outputs/
+/artifacts/
+/tmp/
+playwright-report/
+test-results/
+*.tsbuildinfo
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+.idea/
